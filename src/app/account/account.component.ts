@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
+  public list = [
+    { name: 'test acc' },
+    { name: 'acc 2' },
+  ];
+
   constructor() { }
 
   ngOnInit() {

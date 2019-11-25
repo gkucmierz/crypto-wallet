@@ -1,1 +1,17 @@
-<p>account works!</p>
+
+<div *ngIf="list.length === 0">
+  <p>
+    There is no any account yet!
+  </p>
+</div>
+
+<div *ngIf="list.length > 0">
+  <p>Account List:</p>
+  <ul>
+    <li *ngFor="let item of list; index as i;">{{ item.name }}</li>
+  </ul>
+</div>
+
+<button>+ Create Account</button>
+
+<!-- <pre>{{list.length}}{{ list | json }} asd</pre> -->
